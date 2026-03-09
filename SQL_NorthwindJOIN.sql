@@ -80,4 +80,10 @@ SELECT e.FirstName, e.LastName, e.EmployeeID, o.OrderID
     ON e.EmployeeID = o.EmployeeID
     ORDER BY o.OrderID
 
+   
     
+    SELECT country, "cliente" AS relacion
+	FROM customers
+UNION ALL
+SELECT country, "oficina" 
+	FROM offices;
